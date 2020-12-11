@@ -94,7 +94,7 @@ img.upd_plugin_icon {
 li#editmenu_update,
 li#xh_adminmenu_update {
 	margin: 0 .5em 0 0;
-	width: 2em;
+	width: 2em !important;
 }
 li#editmenu_update a,
 li#xh_adminmenu_update a {
