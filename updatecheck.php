@@ -350,7 +350,7 @@ function upd_addMenuEntry() {
     $t .= '<script>
     jQuery(document).ready(function($){
         $("#edit_menu").append("<li id=\"editmenu_update\"><a href=\"' . $href . '\"><\/a></li>");                   //before xh1.6
-        $("#xh_adminmenu > ul").append("<li id=\"xh_adminmenu_update\"><a href=\"' . $href . '\"><\/a></li>");       //since xh1.6RC
+        $("#xh_adminmenu > ul").append("<li id=\"xh_adminmenu_update\"><a href=\"' . $href . '\" title=\"' . $plugin_tx['hi_updatecheck']['message_sysinfo-update-found'] . '\"><\/a></li>");       //since xh1.6RC
     });
     </script>' . "\n";
     return $t;
