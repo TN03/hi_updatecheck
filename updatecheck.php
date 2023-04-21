@@ -390,7 +390,8 @@ function hi_fsFileGetContents($url, $timeout = 30) {
 
     $connect_timeout = 5;
     $maxredir = 3;
-    $agent = 'CMSimple_XH hi_UpdateChecker';
+    $agent = ($_SERVER['SERVER_NAME'] ? $_SERVER['SERVER_NAME'] . ' ' : '')
+           . 'hi_UpdateChecker';
 
     // cURL
     if (extension_loaded('curl')) {
